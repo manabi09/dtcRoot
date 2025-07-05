@@ -1152,7 +1152,7 @@ a:focus, a:hover {
   Services section
 ==================================================================*/
 .services {
-  padding: 100px 0 130px;
+  padding: 100px 0 0;
 }
 .services .service-block.color-bg {
   background: #28ABE3;
@@ -2681,80 +2681,6 @@ a:focus, a:hover {
 }
 
 /*=================================================================
- internship
-==================================================================*/
-
-.internship-section {
-  background-color: #f2f7ff;
-  padding: 3rem 1rem;
-}
-
-.internship-content {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-  justify-content: space-between;
-}
-
-.internship-text {
-  flex: 1 1 50%;
-}
-
-.internship-text h2 {
-  font-size: 2rem;
-  color: #003f88;
-  margin-bottom: 1rem;
-}
-
-.internship-text p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #444;
-}
-
-.btn-internship {
-  display: inline-block;
-  background-color: #003f88;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s;
-}
-
-.btn-internship:hover {
-  background-color: #002f6c;
-}
-
-.internship-image {
-  flex: 1 1 45%;
-  text-align: center;
-}
-
-.internship-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.internship-slider-section {
-  background: #f0f8ff;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.internship-slider-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #003f88;
-}
-
-/*=================================================================
  form_section
 ==================================================================*/
 .enroll-form-section {
@@ -2941,6 +2867,80 @@ a:focus, a:hover {
 }
 
 /*=================================================================
+ internship
+==================================================================*/
+
+.internship-section {
+  background-color: #f2f7ff;
+  padding: 3rem 1rem;
+}
+
+.internship-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.internship-text {
+  flex: 1 1 50%;
+}
+
+.internship-text h2 {
+  font-size: 2rem;
+  color: #003f88;
+  margin-bottom: 1rem;
+}
+
+.internship-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.btn-internship {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-internship:hover {
+  background-color: #69acf5;
+  color: rgb(243, 241, 241)
+}
+
+.internship-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.internship-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.internship-slider-section {
+  background: #f0f8ff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.internship-slider-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #003f88;
+}
+
+/*=================================================================
  internship_section
 ==================================================================*/
 
@@ -2953,7 +2953,7 @@ a:focus, a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  
   max-width: 1200px;
   margin: auto;
   flex-wrap: wrap;
@@ -2992,6 +2992,18 @@ a:focus, a:hover {
   font-size: 0.95rem;
   margin-bottom: 10px;
   color: #333;
+  padding-left: 30px;
+  position: relative;
+}
+
+.internship-text li::before {
+  content: "\2714"; /* Unicode for check mark */
+  position: absolute;
+  left: 0;
+  color: #007BFF;
+  font-weight: bold;
+  font-size: larger;
+
 }
 
 /* Responsive */
@@ -3134,7 +3146,6 @@ a:focus, a:hover {
 
 .banner-image {
   width: 100%;
-  height: ;
   display: block;
   border-radius: 8px;
 }
@@ -3408,4 +3419,64 @@ a:focus, a:hover {
 
 .btn:hover {
   background-color: #003f88;
+}
+
+/*=================================================================
+ startup Page 
+==================================================================*/
+.startup-section {
+  padding: 3rem 1rem;
+}
+
+.startup-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.startup-text {
+  flex: 1 1 50%;
+}
+
+.startup-text h2 {
+  font-size: 2rem;
+  color: #003f88;
+  margin-bottom: 1rem;
+}
+
+.startup-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.btn-startup {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-startup:hover {
+  background-color: #69acf5;
+  color: rgb(243, 241, 241)
+}
+
+.startup-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.startup-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
