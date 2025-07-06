@@ -2862,7 +2862,7 @@ a:focus, a:hover {
 /* Responsive */
 @media (max-width: 768px) {
   .slide {
-    min-width: 80%;
+    min-width: 100%;
   }
 }
 
@@ -2930,7 +2930,7 @@ a:focus, a:hover {
 
 .internship-slider-section {
   background: #f0f8ff;
-  padding: 3rem 1rem;
+  padding: 40px 0;
   text-align: center;
 }
 

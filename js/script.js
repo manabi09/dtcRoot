@@ -224,3 +224,30 @@ const questions = document.querySelectorAll('.faq-question');
       }
     });
   });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.getElementById("internshipSlider");
+    const slides = slider.querySelectorAll(".slide");
+    let currentIndex = 0;
+    const slideWidth = slides[0].offsetWidth;
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      slider.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    }
+
+    // Auto-slide every 4 seconds
+    setInterval(nextSlide, 4000);
+
+    // Responsive: Recalculate width on resize
+    window.addEventListener("resize", () => {
+      showSlide(currentIndex);
+    });
+  });
+
